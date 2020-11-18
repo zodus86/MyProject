@@ -1,7 +1,5 @@
 package com.MyProject.MyProject.model;
 
-import org.hibernate.tool.schema.ast.GeneratedSqlScriptParserTokenTypes;
-
 import javax.persistence.*;
 import java.time.LocalDate;
 

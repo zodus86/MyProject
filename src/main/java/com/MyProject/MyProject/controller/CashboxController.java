@@ -42,8 +42,8 @@ public class CashboxController {
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
-    @DeleteMapping("{id}")
-    public ResponseEntity<String> delete(@PathVariable Long id){
+    @DeleteMapping("/{id}")
+    public ResponseEntity<String> delete(@PathVariable("id") Long id){
         Cashbox cashbox = cashboxService.findById(id);
 
         if(isEmpty(cashboxService)){

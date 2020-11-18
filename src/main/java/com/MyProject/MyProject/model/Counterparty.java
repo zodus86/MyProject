@@ -1,8 +1,5 @@
 package com.MyProject.MyProject.model;
 
-
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-
 import javax.persistence.*;
 
 @Entity

@@ -46,8 +46,8 @@ public class CounterpartyController {
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
-    @DeleteMapping("{id}")
-    public ResponseEntity<String> delete(@PathVariable Long id){
+    @DeleteMapping("/{id}")
+    public ResponseEntity<String> delete(@PathVariable("id") Long id){
         Counterparty counterparty = counterpartyService.findById(id);
 
         if(isEmpty(counterparty)){

@@ -9,3 +9,4 @@ spring:
     url: jdbc:postgresql://localhost:5432/cashbox
     username: postgres
     password: 112233
+
