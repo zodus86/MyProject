@@ -16,6 +16,7 @@ import static org.apache.commons.lang3.ObjectUtils.isEmpty;
 @RequestMapping("/api/v1/cashbox")
 public class CashboxController {
 
+    @Autowired
     private CashboxService cashboxService;
 
     @GetMapping("/{id}")
