@@ -36,13 +36,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/api/v1/**").anonymous()
                 .anyRequest().authenticated()
                 .and()
-                //.httpBasic();
-                .formLogin()
+                .httpBasic();
+                /*.formLogin()
                 .and()
                 .logout()
                 .invalidateHttpSession(true)
                 .clearAuthentication(true)
-                .deleteCookies("JSESSIONID");
+                .deleteCookies("JSESSIONID");*/
     }
 
     @Override
