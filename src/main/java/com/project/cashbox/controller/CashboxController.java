@@ -20,14 +20,6 @@ public class CashboxController {
     private CashboxService cashboxService;
 
 
-    private String hello = "HELLO WORLD!";
-
-    ///строка
-    @GetMapping
-    public String getHello() {
-        return hello;
-    }
-
     @PreAuthorize("hasAuthority('cashbox:read')")
     @GetMapping("/{id}")
     public ResponseEntity<Cashbox> finById(@PathVariable("id") Long id){
