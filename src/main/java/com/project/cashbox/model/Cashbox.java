@@ -1,8 +1,11 @@
 package com.project.cashbox.model;
 
+import lombok.Data;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 
+@Data
 @Entity
 public class Cashbox {
 
@@ -23,43 +26,4 @@ public class Cashbox {
     @Enumerated(EnumType.STRING)
     private TypeOfOperation typeOfOperation;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public LocalDate getDate() {
-        return date;
-    }
-
-    public void setDate(LocalDate date) {
-        this.date = date;
-    }
-
-    public Double getSum() {
-        return sum;
-    }
-
-    public void setSum(Double sum) {
-        this.sum = sum;
-    }
-
-    public String getText() {
-        return text;
-    }
-
-    public void setText(String text) {
-        this.text = text;
-    }
-
-    public TypeOfOperation getTypeOfOperation() {
-        return typeOfOperation;
-    }
-
-    public void setTypeOfOperation(TypeOfOperation typeOfOperation) {
-        this.typeOfOperation = typeOfOperation;
-    }
 }
