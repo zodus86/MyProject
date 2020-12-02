@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS cashbox
     id serial PRIMARY KEY ,
     date date NOT NULL ,
     text varchar(500) NOT NULL,
-    sum money NOT NULL,
+    sum numeric(12,2) NOT NULL,
     type_of_operation varchar(50) NOT NULL
 );
 

@@ -5,8 +5,9 @@ import lombok.Data;
 import javax.persistence.*;
 import java.time.LocalDate;
 
-@Data
+
 @Entity
+@Data
 public class Cashbox {
 
     @Id
@@ -17,7 +18,7 @@ public class Cashbox {
     private LocalDate date;
 
     @Column(name = "sum")
-    private Double sum;
+    private Long sum;
 
     @Column(name = "text")
     private String text;

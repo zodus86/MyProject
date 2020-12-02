@@ -7,7 +7,7 @@ import java.time.LocalDate;
 public class CashboxDto {
 
     private LocalDate date;
-    private Double sum;
+    private Long sum;
     private String text;
     private TypeOfOperation typeOfOperation;
 
@@ -19,11 +19,11 @@ public class CashboxDto {
         this.date = date;
     }
 
-    public Double getSum() {
+    public Long getSum() {
         return sum;
     }
 
-    public void setSum(Double sum) {
+    public void setSum(Long sum) {
         this.sum = sum;
     }
 
